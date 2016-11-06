@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Nginx-http-combo</title>
+	<link rel="stylesheet" href="??styles/normalize.css,styles/animate.css">
+</head>
+<body>
+	<p>要想支持 combo 需要使用第三方模块：例如淘宝的 combo 模块</p>
+	<p>由于Nginx(Windows版本)安装第三方模块比较繁琐，稍后使用node演示此功能</p>
+	<h2>Nginx(Linux版本)安装 combo 模块参考如下：</h2>
+<pre>
+目前必须安装在1.4.+才可以 
+官方：http://wiki.nginx.org/HttpConcatModule 
+下载源码：http://code.taobao.org/svn/nginx_concat_module/trunk/ 
+./configure \ 
+  --prefix=/home/ebuy/work/usr/nginx/nginx-1.4.7 \ 
+  --add-module=/home/ebuy/work/soft/nginx_concat_module 
+
+make -j16 & make install -j16 
+
+配置语法 
+        location / { 
+            root   html; 
+            index  index.html index.htm; 
+# nginx_concat_module 主开关 
+concat on; 
+# 最大合并文件数 
+# concat_max_files 10; 
+# 只允许同类型文件合并 
+# concat_unique on; 
+# 允许合并的文件类型，多个以逗号分隔。如：application/x-javascript, text/css 
+# concat_types text/html; 
+# （详细察看安装包下 INSTALL 和 README 文件）。其实不用那么复杂，简单的配置 
+} 
+
+有3个js文件 
+http://10.27.82.170:8888/a.js 
+http://10.27.82.170:8888/b.js 
+http://10.27.82.170:8888/c.js 
+
+通过nginx插件，可以一个请求把文件合并（注意是2个问号） 
+http://10.27.82.170:8888/??a.js,b.js,c.js
+</pre>
+	<script src="??scripts/jquery.js,scripts/jquery.cookie.js"></script>
+</body>
+</html>
