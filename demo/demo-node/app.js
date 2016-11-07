@@ -19,21 +19,21 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+//app.use(favicon(path.join(__dirname, 'public', 'fa//vicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 //(1)配置反向代理
-//httpProxy.createProxyServer({target:'http://localhost:3000'}).listen(8000);
+// httpProxy.createProxyServer({target:'http://localhost:3000'}).listen(8000);
 //(2)配置gzip压缩
-//app.use(compression());
+// app.use(compression());
 //(3)配置http缓存：maxAge、etag、lastModified等
 app.use(express.static(path.join(__dirname, 'public'),{maxAge:0,etag:false,lastModified:false}));
 //(4)配置combo
-//app.get('/javascripts', combo.combine({rootPath: path.join(__dirname, 'public')+'/javascripts'}), combo.respond);
-//app.get('/stylesheets', combo.combine({rootPath: path.join(__dirname, 'public')+'/stylesheets'}), combo.respond);
+// app.get('/javascripts', combo.combine({rootPath: path.join(__dirname, 'public')+'/javascripts'}), combo.respond);
+// app.get('/stylesheets', combo.combine({rootPath: path.join(__dirname, 'public')+'/stylesheets'}), combo.respond);
 //(5)配置ssi
 //expressSSI.init(express,'http://gome.com.cn');
 
