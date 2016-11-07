@@ -1,0 +1,13 @@
+/*-- icon --*/
+.icon_01 {
+    background:url(i/1.png?__sprite);
+}
+.icon_02 {
+    background:url(i/2.png?__sprite);
+}
+.icon_03 {
+    background:url(i/3.png?__sprite);
+}
+.icon_04 {background: url(i/1.png);}
+.icon_05 {background: url(i/2.png);}
+.icon_06 {background: url(i/3.png?__sprite);}

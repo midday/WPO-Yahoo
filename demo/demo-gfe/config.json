@@ -1,0 +1,32 @@
+{
+    "projectName": "demo",
+    "projectPath": "gmpro/2.0.0/channel/demo/1.1.1",
+    "projectFolder": "css|js|widget",
+    "projectApp": "image",
+    "tplPath": "WEB-INF/template",
+    "tplFolder": "html|css",
+    "tplApp": "channel_web",
+    "svnPath": {
+        "trunk": "https://repo.ds.gome.com.cn:8443/svn/atg_poc/30_Coding/NewDevMode/trunk/gome-gfe/channel_web/",
+        "branch": "https://repo.ds.gome.com.cn:8443/svn/atg_poc/30_Coding/NewDevMode/branches/gome-gfe/channel_web/",
+        "tag": "https://repo.ds.gome.com.cn:8443/svn/atg_poc/30_Coding/NewDevMode/tags/gome-gfe/channel_web/"
+    },
+    "build":{},
+    "output":{
+        "jsPlace": "insertBody",
+        "cssCombo": true,
+        "jsCombo": true,
+
+        "cssMd5":true,
+        "jsMd5":false,
+
+        "compresshtml": false,
+        "compressJs": true,
+        "compressCss": false,
+        "compressPng": true,
+        
+        "cssSprite": true,
+        "jsRemove": []
+    },
+    "widgetAutoUpdate":false
+}
