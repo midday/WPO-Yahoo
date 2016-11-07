@@ -1,7 +1,7 @@
 {
-  "name": "web-front-end-optimization",
+  "name": "WPO-Yahoo",
   "version": "1.0.0",
-  "description": "(1)常用web优化手段在国美在线的应用(2)剖析CDN缓存的原理(2)走进nginx(3)剖析浏览器缓存的原理(4)浏览器缓存的nginx配置(5)剖析gzip优化策略的原理(6)gzip的nginx配置(7)剖析ssi的原理(8)ssi的nginx配置(9)剖析combo的原理(9)combo的nginx配置(10)其他优化手段-前后端分离",
+  "description": "",
   "main": "index.js",
   "dependencies": {
     "nodeppt": "^1.4.2"
@@ -11,10 +11,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "web",
-    "optimization、http",
-    "cache、gzip、ssi",
-    "front-end and back-end separation"
   ],
   "author": "midday",
   "license": "MIT"
